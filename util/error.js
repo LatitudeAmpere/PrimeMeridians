@@ -5,6 +5,6 @@ module.exports = async (text, channel) => {
     let embed = new MessageEmbed()
     .setColor("RED")
     .setDescription(text)
-    .setFooter("Merlin's beard!")
+    .setFooter("Oh my goodness!")
     await channel.send(embed)
 }
