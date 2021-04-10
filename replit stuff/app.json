@@ -1,0 +1,32 @@
+{
+    "name": "Musicsheen",
+    "description": "uhhhhhhh",
+    "repository": "repo",
+    "logo": "no",
+    "keywords": ["node", "discord", "youtube","music","bot"],
+    "image": "n/a",
+    "buildpacks": [
+      {
+        "url": "n/a"
+      },
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "env": {
+      "TOKEN": {
+        "description": "discord token",
+        "required": "true"
+      },
+      "PREFIX": {
+        "description": "prefix",
+        "value": "%"
+      },
+      "SOUNDCLOUD_CLIENT_ID": {
+        "description": "soundcloud client id",
+        "value": "dmDh7QSlmGpzH9qQoH1YExYCGcyYeYYC",
+        "required": "false"
+      }
+    }  
+  }
+  
