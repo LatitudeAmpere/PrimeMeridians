@@ -3,12 +3,12 @@ const { MessageEmbed } = require('discord.js')
 module.exports = {
     info: {
         name: "help",
-        description: "shows all commands",
+        description: "Shows all commands",
         usage: "[command]",
-        aliases: ["commands", "help me"]
+        aliases: ["commands", "help me", "pls help"]
     },
-//help me doesn't work b/c it's two words
-    run: async function(client, message, args) {
+
+    run: async function(client, message, args){
         var allcmds = "";
 
         client.commands.forEach(cmd => {
@@ -17,19 +17,19 @@ module.exports = {
         })
 
         let embed = new MessageEmbed()
-        .setAuthor("Botler Commands "+client.user.username,)
+        .setAuthor("Musicsheen commands", +client.user.username)
         .setColor("BLUE")
         .setDescription(allcmds)
-        .setFooter(`Need more information on a command? Type ${client.config.prefix}help [command]`)
+        .setFooter(`To get info of each command you can do ${client.config.prefix}help [command] | geographconcept`)
 
         if(!args[0])return message.channel.send(embed)
         else {
             let cmd = args[0]
             let command = client.commands.get(cmd)
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
-            if(!command)return message.channel.send("unknown command")
+            if(!command)return message.channel.send("Unknown Command")
             let commandinfo = new MessageEmbed()
-            .setTitle("command: "+command.info.name+" info")
+            .setTitle("Command: "+command.info.name+" info")
             .setColor("YELLOW")
             .setDescription(`
 Name: ${command.info.name}
