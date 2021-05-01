@@ -1,0 +1,23 @@
+{
+  "name": "botler",
+  "version": "1.0.0",
+  "description": "the botler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "the PrimeMeridians",
+  "license": "ISC",
+  "dependencies": {
+    "discord-ytdl-core": "^5.0.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "lyrics-finder": "^21.7.0",
+    "self-reload-json": "^0.4.0",
+    "soundcloud-downloader": "^1.0.0",
+    "youtube-sr": "^4.0.4",
+    "yt-search": "^2.8.0",
+    "ytdl-core": "^4.5.0",
+    "ytpl": "^2.1.1"
+  }
+}
