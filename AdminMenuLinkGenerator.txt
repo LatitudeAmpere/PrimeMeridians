@@ -1,0 +1,14 @@
+** ADMIN MENU LINK GENERATOR ***
+
+To generate the URL for your Botler's Admin Menu, please use the following steps:
+
+1. Download The Botler's code from GitHub.
+2. Upload The Botler's code onto your server to the following path: /var/www/html
+3. Download the following packages onto your server: discord.js, node.js, NPM, and PM2.
+4. Start your server, if it is not already running.
+5. Assemble your URL using the following components:
+   a. http://
+   b. Your server's IP address
+   c. /GUI.php
+   d. EXAMPLE URL: https://123.456.78.90/GUI.php
+6. Use any browser and your generated URL to access your Botler's Admin Menu.
